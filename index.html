@@ -1,0 +1,91 @@
+---
+layout: default
+title: Hello
+map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191997.8632449528!2d174.62177067305853!3d-41.24428516095246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b1fc49e974cb%3A0xa00ef63a213b470!2sWellington%2C+New+Zealand!5e0!3m2!1sen!2sid!4v1494137348372" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+skills:
+  - name: Web Development
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    icon: telegram
+  - name: Photography
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    icon: heart
+  - name: Graphic Design
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    icon: telegram
+  - name: Social Media
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    icon: telegram
+  - name: Digital Marketing
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    icon: telegram
+  - name: Video Production
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    icon: telegram
+experience:
+  - name: Job Role 1
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    icon: telegram
+  - name: Job Role 2
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    icon: heart
+  - name: Job Role 3
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    icon: telegram
+  - name: Job Role 4
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    icon: heart
+---
+
+  <section class="background">
+    <!-- add background image -->
+    <div class="intro">
+      <h1>Aleisha Mooney</h1>
+      <h2>learning how to code</h2>
+      <!-- add icon here -->
+      <p>Wellington, New Zealand</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="https://www.instagram.com/aleishamooney/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+  <section class="skills grid">
+      <h2 class="col-12">My Skills</h2>
+
+      {% for skill in page.skills %}
+    <div class="col-4">
+      <i class="fa fa-{{ skill.icon }}"></i>
+      <h3 class="editable">{{skill.name}}</h3>
+      <p class="editable">{{skill.description}}</p>
+    </div>
+    {% endfor %}
+</section>
+
+<section>
+
+{{page.map}}
+
+</section>
+
+<section class="experience grid">
+    <h2 class="col-12">My Experience</h2>
+
+    {% for experience in page.experience %}
+    <div class="col-2">
+      <i class="fa fa-{{ experience.icon }}"></i>
+    </div>
+    <div class="col-2">
+      <h3 class="editable">{{experience.name}}</h3>
+    </div>
+    <div class="col-8">
+      <p class="editable">{{experience.description}}</p>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>

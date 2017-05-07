@@ -1,0 +1,77 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {font-family: 'Amatic SC', cursive;}
+
+p, a {font-family: 'Open Sans Condensed', sans-serif;}
+
+p {
+  font-size: 35px;
+}
+
+.background {
+  background-image: url('http:www.unsplash.it/1200/600/?random');}
+}
+
+.intro {
+  text-align: center;
+  font-size: 45px;
+}
+
+h1{
+  text-align:center;
+  font-size: 100px;
+  color: pink;
+  font-weight: bold;
+}
+
+.about-me {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  margin: auto 10px;
+  text-align: center;
+}
+
+.about {
+  background-color: pink;
+}
+
+h2{
+  text-align: center;
+  font-size: 65px;
+}
+
+h3{
+  font-size:55px;
+}
+
+section.experience {
+  background-color: pink;
+}
+
+section {
+  padding: 50px;
+}
+
+.skills {
+  text-align: center;
+}
+
+i {
+  color: pink;
+}
+
+.experience i{
+  color:black;
+}
+
+/*things to style
+
+
+ADD PADDING AND MARGIN TO EACH SECTION
+STYLE OUR ICONS
+BACKGROUND COLOURS AND IMAGES

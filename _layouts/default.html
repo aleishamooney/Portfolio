@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> {{page.title}} </title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
+  <script src="https://use.fontawesome.com/f60704af36.js"></script>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="about"></a>
+      <a href="skills"></a>
+      <a href="experience"></a>
+      <a href="contact"></a>
+    </nav>
+    <p>hello from the other side!</p>
+  </header>
+
+{{content}}
+
+  <Footer>
+    <form method="POST" action="http://formspree.io/aleishamooney@gmail.com">
+      <label for="email">Name</label>
+      <input type="name" name="name" placeholder="Your name">
+      <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Your email">
+      <label for="message">Message</label>
+    <textarea name="message" placeholder="Your message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+    <i class="fa fa-telegram" aria-hidden="true"></i>
+  </Footer>
+
+
+  </body>
+
+
+  </html>
